@@ -39,10 +39,11 @@ def num_points_scored(player)
 end
 
 def shoe_size(player)
-
-  game_hash.each do |key,value|
+  size= nil
+  game_hash.each do |key, value|
     if game_hash[key][:players].include?(player)
-      return game_hash[key][:player][player][:shoe]
+      size = game_hash[key][:players][player][:shoe]
     end
   end
+  size
 end
