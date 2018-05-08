@@ -91,6 +91,18 @@ end
 
 
 def big_shoe_rebounds
-
-
+shoe_size=[]
+game_hash.collect do |team,team_data|
+  team_data[:players].collect do |team_name,stats|
+    shoe_size << stats[:shoe]
+  end
+end
+shoe_size_updated= shoe_size.sort.reverse
+game_hash.each do |team,team_data|
+  game_hash[team][:players].each do |team_name,stats|
+    if game_hash[team][:players][team_name][:shoe] == shoe_size_updated[0]
+      return game_hash[team][:players][team_name][:rebounds]
+    end
+  end
+end
 end
