@@ -51,9 +51,8 @@ end
 def team_colors(team_name)
 color= nil
   game_hash.each do |side,data|
-    data.each do |team,data|
-      if team == team_name
-        color = game_hash[side][:colors].join(", ")
+      if game_hash[side][:team_name].include?(team_name)
+        color = game_hash[side][:colors]
       end
     end
   end
