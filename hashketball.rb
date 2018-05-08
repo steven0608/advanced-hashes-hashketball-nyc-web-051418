@@ -62,7 +62,7 @@ end
 def team_names
   names = nil
   game_hash.select do |side,data|
-  names << game_hash[side][:team_names]
+  names << game_hash[side][:team_name]
 end
   names
 end
