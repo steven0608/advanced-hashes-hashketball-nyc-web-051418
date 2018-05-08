@@ -57,5 +57,5 @@ color= nil
       end
     end
   end
-  color 
+  color
 end
