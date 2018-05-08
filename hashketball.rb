@@ -60,9 +60,9 @@ color= nil
 end
 
 def team_names
-  names = []
+  names = nil
   game_hash.select do |side,data|
-  names <<  game_hash[side][:team_names]
+  names << game_hash[side][:team_names]
 end
   names
 end
