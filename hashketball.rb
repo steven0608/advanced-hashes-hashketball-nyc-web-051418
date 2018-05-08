@@ -73,8 +73,8 @@ def player_numbers(team_name)
     data.each do |x,y|
       if x == team_name
       game_hash[side][:players].collect |a,b|
-      b.values
+      b[:numbers]
     end
-  end      
+  end
 end
 end
