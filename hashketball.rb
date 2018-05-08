@@ -55,6 +55,14 @@ color= nil
         color = game_hash[side][:colors]
       end
     end
-  
+
   color
+end
+
+def team_names
+  names = []
+  game_hash.each do |side,data|
+  names <<  game_hash[side][:team_names]
+end
+  names
 end
