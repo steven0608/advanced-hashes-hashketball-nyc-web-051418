@@ -32,8 +32,8 @@ def num_points_scored(player)
   scored= nil
   game_hash.each do |key, value|
     if game_hash[key][:players].include?(player)
-      scored=game_hash[key][:players][player][:points]
+      scored = game_hash[key][:players][player][:points]
     end
   end
+  scored
 end
-
