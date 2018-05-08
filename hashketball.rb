@@ -71,7 +71,7 @@ def player_numbers(team_name)
 if game_hash[:home][:team_name] == team_name
   game_hash[:home][:players].collect do |key, value|
     value[:number]
-
+end
   else
     game_hash[:away][:team_name] == team_name
       game_hash[:away][:players].collect do |key, value|
