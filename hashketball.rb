@@ -81,7 +81,7 @@ end
 end
 
 def player_stats(player)
-  if game_hash[:home][:players] == player
+  if game_hash[:home][:players],include? (player)
     game_hash[:home][:players][player]
 
     else
