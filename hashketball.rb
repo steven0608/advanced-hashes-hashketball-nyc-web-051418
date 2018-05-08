@@ -53,7 +53,7 @@ color= nil
   game_hash.each do |side,data|
     data.each do |team,data|
       if team == team_name
-        color = game_hash[side][:colors]
+        color = game_hash[side][:colors].join(", ")
       end
     end
   end
