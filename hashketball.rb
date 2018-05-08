@@ -55,6 +55,6 @@ color= nil
         color = game_hash[side][:colors]
       end
     end
-  end
+  
   color
 end
