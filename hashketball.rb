@@ -79,5 +79,3 @@ if game_hash[:home][:team_name] == team_name
     end
   end
 end
-end
-end
