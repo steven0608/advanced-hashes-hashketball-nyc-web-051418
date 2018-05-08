@@ -79,3 +79,14 @@ end
     end
   end
 end
+
+def player_stats(player)
+  if game_hash[:home][:players] == player
+    game_hash[:home][:players][player]
+
+    else
+      game_hash[:away][:players] == player
+       game_hash[:home][:players][player]
+      end
+    end
+end
