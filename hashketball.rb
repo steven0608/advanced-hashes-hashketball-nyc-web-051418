@@ -42,7 +42,7 @@ def shoe_size(player)
   size = nil
   game_hash.each do |key,value|
     if game_hash[key][:players].include?(player)
-      size=game_hash[key][:player][player][:shoe]
+      size = game_hash[key][:player][player][:shoe]
     end
   end
 size
